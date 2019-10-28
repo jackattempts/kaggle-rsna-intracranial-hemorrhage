@@ -1,4 +1,4 @@
-workdir = './model/model001'
+workdir = './model/model002'
 seed = 20
 apex = True
 
@@ -18,12 +18,13 @@ loss = dict(
 optim = dict(
     name='Adam',
     params=dict(
-        lr=6e-5,
+        # lr=6e-5,
+        lr=6e-2,
     ),
 )
 
 model = dict(
-    name='se_resnext50_32x4d',
+    name='effnet_b4',
     pretrained='imagenet',
     n_output=6,
 )
