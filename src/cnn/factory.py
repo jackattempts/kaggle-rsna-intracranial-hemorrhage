@@ -45,7 +45,7 @@ def get_model(cfg):
     log(f'pretrained: {cfg.model.pretrained}')
 
     if cfg.model.name.startswith("effnet"):
-        effnet_version = cfg.model.name.split("_")[-1]
+        effnet_version = cfg.model.name.split("_")[1][-1]
         model = EfficientNet.from_pretrained(
             f'efficientnet-b{effnet_version}',
             num_classes=cfg.model.n_output

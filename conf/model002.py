@@ -3,11 +3,11 @@ seed = 20
 apex = True
 
 n_fold = 5
-epoch = 5
+epoch = 12
 resume_from = None
 
-batch_size = 28
-num_workers = 4
+batch_size = 16
+num_workers = 0
 imgsize = (512, 512) #(height, width)
 
 loss = dict(
@@ -19,7 +19,7 @@ optim = dict(
     name='Adam',
     params=dict(
         # lr=6e-5,
-        lr=6e-2,
+        lr=6e-5,
     ),
 )
 

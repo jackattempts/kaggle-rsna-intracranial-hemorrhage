@@ -7,7 +7,7 @@ epoch = 5
 resume_from = None
 
 batch_size = 28
-num_workers = 4
+num_workers = 0
 imgsize = (512, 512) #(height, width)
 
 loss = dict(
